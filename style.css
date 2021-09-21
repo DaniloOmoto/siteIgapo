@@ -425,12 +425,7 @@ img{
 
 
 /*==================== SERVIÇOS ====================*/
-.servicos{
-    overflow: hidden;
-    background-color: var(--body-color);
-    width: 100vw;
-   
-}
+
 
 .servicos__container{
     gap:1.5rem;
@@ -457,6 +452,7 @@ img{
     margin-bottom: var(--mb-2);
     font-weight: var(--font-medium);
     text-align: center;
+    
 }
 
 .servicos__button{
@@ -488,6 +484,7 @@ img{
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    
 
 }
 .servicos__img{
@@ -498,17 +495,19 @@ img{
     margin: 0 auto;
 }
 
-.servicos__modal-content{
+.servicos__modal-content1,.servicos__modal-content2,
+.servicos__modal-content3,.servicos__modal-content4{
     position: relative;
     background-color: var(--container-color);
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 2.5rem;
     border-radius: .5rem;
-    width: 70vw;
+    justify-content: center;
+    text-align: justify;
 }
 
 .servicos__modal-services{
     row-gap: 1rem;
-}
+}z
 
 .servicos__modal-service{
     display: flex;
@@ -516,16 +515,20 @@ img{
 
 .servicos__modal-title{
     font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-1-5);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-3);
+    text-align: center;
 }
 .servicos__modal-close{
     position: absolute;
     top: 1rem;
     right: 1rem;
     font-size: 2.5rem;
-    color: var(--first-color);
+    color: black;
     cursor: pointer;
+}
+.servicos__modal-close:hover{
+    color: var(--first-color);
 }
 
 .servicos__modal-icon{
@@ -811,7 +814,23 @@ img{
     .servicos__modal{
         padding:0 .5rem
     }
+    .servicos__modal-content1{
+        position: absolute;
+        top: 20%;
+    }
    
+    .servicos__modal-content2{
+        position: absolute;
+        top: 40%;
+    }
+    .servicos__modal-content3{
+        position: absolute;
+        top: 60%;
+    }
+    .servicos__modal-content4{
+        position: absolute;
+        top: 80%;
+    }
 }
 
 
