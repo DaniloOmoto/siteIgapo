@@ -4,7 +4,7 @@
 :root{
   --header-height: 3rem;
 /*===== Colores =====*/
---hue-color:45;
+--hue-color:55;
 
   --first-color: hsl(var(--hue-color), 100%, 50%);
   --first-color-second:hsl(var(--hue-color), 100%, 50%);
@@ -134,19 +134,6 @@ img{
 }
 
 
-
-/*========== Variables Dark theme ==========*/
-
-
-/*========== Button Dark/Light ==========*/
-
-
-/*==================== BASE ====================*/
-
-
-/*==================== REUSABLE CSS CLASSES ====================*/
-
-
 /*==================== LAYOUT ====================*/
 .bd-container{
     max-width: 960px;
@@ -234,7 +221,7 @@ img{
 
 }
 .nav__link:hover{
-    color: black;
+    color: var(--first-color);
     transition:.3s;
 }
 
@@ -270,6 +257,9 @@ img{
 .scroll-header .nav__toggle {
    color:rgb(248, 248, 248); 
 }
+.nav__toggle:hover{
+    color:var(--first-color);
+}
 .scroll-header .nav__menu{
     background-color: rgb(0, 0, 0);
 }
@@ -296,7 +286,7 @@ img{
      visibility: hidden;
  }
  .scrolltop:hover{
-     background-color: var(--first-color-alt);
+     background-color: var(--first-color);
  }
  .scrolltop__icon{
      font-size: 2rem;
@@ -312,7 +302,7 @@ img{
 .inicio{
   
     overflow: hidden;
-    background:linear-gradient(rgba(4, 9, 30, 0.199),rgba(4, 9, 30, 0.548)), url(img/Foto\ Loja.jpg) no-repeat 50% 50%;
+    background:linear-gradient(rgba(4, 9, 30, 0.1),rgba(4, 9, 30, 0.1)), url(img/Foto\ Loja.jpg) no-repeat 50% 50%;
     background-size: cover;
     width: 100vw;
 }
@@ -345,6 +335,9 @@ img{
     font-size: 5rem;
     color: white;
     padding: .5rem;
+}
+.inicio__social:hover{
+    color: var(--first-color);
 }
 
 
@@ -397,7 +390,9 @@ img{
 
 
 /*==================== HISTORIA ====================*/
-
+.historia{
+    padding-bottom: 0rem;
+}
 .historia__img{
     width:300px;
     display: block;
@@ -425,8 +420,9 @@ img{
 
 
 /*==================== SERVIÇOS ====================*/
-
-
+.servicos{
+    padding-top: 6rem;
+}
 .servicos__container{
     gap:1.5rem;
    
@@ -436,7 +432,7 @@ img{
     position: relative;
     background-color: var(--container-color);
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    border-radius: .25rem;
+    border-radius: .5rem;
     box-shadow:0 3px 5px rgba(0, 0, 0,.3);
     transition: .3s;
 }
@@ -788,9 +784,51 @@ img{
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width:536px){
-    
+    .l-header{
+        background-color: white;
+    }
     .nave__menu{
         padding: 4rem .25rem;
+    }
+    .nav__link{
+        color: rgb(0, 0, 0);
+        transition:.3s;
+        font-weight: var(--font-medium);
+    }
+    .nav__toggle{
+        color: rgb(0, 0, 0);
+        font-size: 1.7rem;
+        cursor: pointer;
+        font-weight: var(--font-medium);
+    }
+    .nav__toggle:hover{
+        color:var(--first-color);
+    }
+
+    .scroll-header{
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 2px 4x rgb(0, 0, 0,.15);
+    }
+    
+    .scroll-header .nav__toggle  {
+       color:rgb(255, 255, 255); 
+    }
+    .scroll-header .nav__link {
+       color:rgb(255, 255, 255); 
+    }
+    .nav__toggle:hover{
+        color:var(--first-color);
+    }
+    .nav__link:hover{
+        color: var(--first-color);
+    }
+    .scroll-header .nav__menu{
+        background-color: rgb(0, 0, 0);
+    }
+    .active-link{
+        color: var(--first-color);}
+    .scroll-header .active-link{
+        color: var(--first-color);
     }
 
     .inicio{
@@ -841,6 +879,52 @@ img{
    .container{
        margin: 3rem;
    }
+   .l-header{
+    background-color: white;
+}
+.nave__menu{
+    padding: 4rem .25rem;
+}
+.nav__link{
+    color: rgb(0, 0, 0);
+    transition:.3s;
+    font-weight: var(--font-medium);
+}
+.nav__toggle{
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: var(--font-medium);
+}
+.nav__toggle:hover{
+    color:var(--first-color);
+}
+
+.scroll-header{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 2px 4x rgb(0, 0, 0,.15);
+}
+
+.scroll-header .nav__toggle  {
+   color:rgb(255, 255, 255); 
+}
+.scroll-header .nav__link {
+   color:rgb(255, 255, 255); 
+}
+.nav__toggle:hover{
+    color:var(--first-color);
+}
+.nav__link:hover{
+    color: var(--first-color);
+}
+.scroll-header .nav__menu{
+    background-color: rgb(0, 0, 0);
+}
+.active-link{
+    color: var(--first-color);}
+.scroll-header .active-link{
+    color: var(--first-color);
+}
    
    
     .inicio{

@@ -126,7 +126,7 @@ modalCloses.forEach((modalClose)=>{
 /*=========== ANIMAÇOES============*/
 const sr = ScrollReveal({
     origin:'top',
-    distance:'80px',
+    distance:'30px',
     duration:2000,
     reset:true
 
@@ -142,7 +142,10 @@ sr.reveal('.historia__data',{delay:200})
 sr.reveal('.historia__img2',{delay:400})
 sr.reveal('.historia__data2',{delay:400})
 
-sr.reveal('.servicos',{delay:400})
+
+
+sr.reveal('.servicos',{delay:300})
+
 
 sr.reveal('.t-title',{})
 sr.reveal('.t-sub',{delay:200})
