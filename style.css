@@ -744,6 +744,13 @@ h2 {
     bottom: 0;
 }
 
+.marcas__description{
+ color: black;
+}
+.marcas__description:hover{
+ color:var(--first-color-light);
+}
+
 
 
 
