@@ -141,10 +141,15 @@ sr.reveal('.historia__img',{delay:200})
 sr.reveal('.historia__data',{delay:200})
 sr.reveal('.historia__img2',{delay:400})
 sr.reveal('.historia__data2',{delay:400})
+sr.reveal('.historia__img3',{delay:600})
+sr.reveal('.historia__data3',{delay:600})
+sr.reveal('.historia__img4',{delay:800})
+sr.reveal('.historia__data4',{delay:800})
+sr.reveal('.historia__valores',{delay:800})
 
 
 
-sr.reveal('.servicos',{delay:300})
+sr.reveal('.servicos',{delay:400})
 
 
 sr.reveal('.t-title',{})
@@ -158,6 +163,8 @@ sr.reveal('.marcas__img',{delay:400})
 
 sr.reveal('.c-title',{})
 sr.reveal('.c-sub',{delay:200})
+sr.reveal('.contato__data',{delay:400})
+
 
 
 sr.reveal('.footer__title',{delay:200})
